@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RGB Color Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="mainBody" class="min-h-screen flex items-center justify-center transition-colors duration-700 bg-black">
+
+  <div class="bg-white/20 backdrop-blur-xl p-8 rounded-2xl shadow-xl text-center w-96 text-white">
+    <h1 class="text-2xl font-semibold mb-4">RGB Color Generator</h1>
+
+    <input type="color" id="colorPicker" class="w-24 h-24 rounded-full cursor-pointer border-2 border-white mb-6 shadow-lg" />
+
+    <div id="colorDisplay" class="w-full h-16 rounded-xl mb-6 shadow-inner transition-all"></div>
+
+    <div class="space-y-2">
+      <p id="rgbValue" class="text-lg font-semibold font-family-serif">RGB: rgb(255, 255, 255)</p>
+      <p id="hexValue" class="text-lg font-semibold font-family-serif">HEX: #ffffff</p>
+      <p id="hslValue" class="text-lg font-semibold font-family-serif   ">HSL: hsl(0, 0%, 100%)</p>
+    </div>
+
+    <button id="copyBtn" class="mt-6 bg-white/30 hover:bg-white/50 text-white font-semibold py-2 px-4 rounded-lg transition">
+      Copy RGB
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
